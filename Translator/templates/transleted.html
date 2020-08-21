@@ -1,12 +1,10 @@
-{% extends 'index.html' %}
-{% block content %}
-    {% include 'navbar.html' %}
-    <center><h2>Text Successfully Translated <span> {{ lang }} </span> into <span>{{ t_lang }} </span></h2></center>
+{% extends 'index.html'%}
+{% block content%}
+{% include 'navbar.html' %}
+<center><h2>Text Successfully Translated <span> {{ lang }} </span> into <span>{{ t_lang }} </span></h2></center>
 
-    <h3>
-        {{ translated }}
-    </h3>
-    <h1>Analyzed Text - {{ purpose }}</h1>
-    <p> {{ analyzed_text }}</p>
+<h3>
+    {{ translated }}
+</h3>
 {% endblock %}
 
