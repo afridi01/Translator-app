@@ -19,56 +19,64 @@
         }
 
         .center {
-            margin-top:40px ;
+            margin-top: 40px;
             display: flex;
             justify-content: center;
             font-size: 25px;
             font-weight: bold;
         }
-    h3{
-        display: flex;
-        color: darkgoldenrod;
-       justify-content: center;
 
-    }
-    span{
-        color: crimson;
-    }
-</style>
+        h3 {
+            display: flex;
+            color: darkgoldenrod;
+            justify-content: center;
+
+        }
+
+        span {
+            color: crimson;
+        }
+    </style>
 </head>
 
 <body>
 {% block content %}
 
-{% include 'navbar.html' %}
+    {% include 'navbar.html' %}
 
 
 
-<div class="container">
+    <div class="container">
 
 
-    <form action="translator/" method="get">
+        <form action="translator/" method="get">
 
-        <div class="form-group">
-            <label class="center" for="exampleFormControlTextarea1">Enter your text that you like to translate</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter text: " rows="3" name="text"></textarea>
-        </div>
+            <div class="form-group">
+                <label class="center" for="exampleFormControlTextarea1">Enter your text that you like to
+                    translate</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter text: " rows="3"
+                          name="text"></textarea>
+                <input type="checkbox" name="removePuncation"> Remove Punctuations<br>
 
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Example select</label>
-            <select class="form-control" id="exampleFormControlSelect1" name="lang">
-                <option value="bn">Bengali</option>
-                <option value="hi">Hindi</option>
-                <option value="en">English</option>
-                <option value="zh-cn">Chines</option>
-                <option value="ar">Arabic</option>
-            </select>
-        </div>
-        <center> <button type="submit" class="btn btn-warning ">Translate</button> </center>
-    </form>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="lang">
+                    <option value="bn">Bengali</option>
+                    <option value="hi">Hindi</option>
+                    <option value="en">English</option>
+                    <option value="zh-cn">Chines</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </div>
+            <center>
+                <button type="submit" class="btn btn-warning ">Translate</button>
+            </center>
+        </form>
 
 
-</div>
+    </div>
 {% endblock %}
 
 
