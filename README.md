@@ -1,2 +1,2 @@
 # Translator app
- using google translate libray
+ using google translate libray, Django
